@@ -1,0 +1,427 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    float selvi=127.2f;
+		System.out.print(selvi);
+		System.out.println();
+	    System.out.printf("%.2f",selvi);
+	
+	}
+}
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    String name;
+		Scanner kbd=new Scanner(System.in);
+		name=kbd.nextLine();
+		System.out.println(name);
+	    
+	System.out.println(name.charAt(2));
+	}
+}
+
+
+
+1.What is JAVA?
+
+Java is a high-level, object-oriented programming language designed for portability, reliability, and ease of use. It follows the "Write Once, Run Anywhere" principle, meaning Java code can run on any device with a Java Virtual Machine (JVM).
+
+2.C vs Java vs Python
+
+C: Procedural language, platform-dependent, manual memory management.
+Java: Object-oriented, platform-independent, automatic memory management via garbage collection.
+Python: Interpreted, dynamically-typed, and known for simplicity.
+
+3.JVM Works
+ How JVM works - JVM Architecture
+The JVM executes Java bytecode. It consists of:
+
+Class Loader: Loads .class files.
+Bytecode Verifier: Ensures code security.
+Execution Engine: Converts bytecode into machine code.
+
+4.Differences between JDK, JRE, and JVM
+JDK: Includes tools for development and the JRE.
+JRE: Provides the libraries and JVM to run Java applications.
+JVM: Executes the Java bytecode.
+Analogy: JDK = Kitchen, JRE = Cooking tools, JVM = Stove.
+
+5.Difference between Bytecode and Machine Code
+Bytecode: Intermediate code executed by the JVM.
+Machine Code: Hardware-specific binary instructions.
+Example: Bytecode (.class) is portable, while machine code is platform-dependent.
+
+Programming VS Coding
+Compiler VS INterpreter
+LOW VS HIGH level language
+
+
+********************Variables*****************
+
+A variable is a named storage location in the memory that holds a value, which can be modified during program execution. The type of data a variable can hold is determined by its data type.
+
+int age = 25;
+String name = "Megna";
+
+****************Data Types****************
+
+Primitive Data Types
+byte:
+Size: 1 byte (8 bits)
+Range: -128 to 127
+short:
+Size: 2 bytes (16 bits)
+Range: -32,768 to 32,767
+int:
+Size: 4 bytes (32 bits)
+Range: -2,147,483,648 to 2,147,483,647
+long:
+Size: 8 bytes (64 bits)
+Range: -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+float:
+Size: 4 bytes (32 bits)
+Range: Approximately ±3.40282347E+38
+double:
+Size: 8 bytes (64 bits)
+Range: Approximately ±1.7976931348623157E+308
+char:
+Size: 2 bytes (16 bits)
+Range: 0 to 65,535 (Unicode values)
+boolean:
+Size: 1 bit
+Values: true or false
+Non-Primitive Data Types
+String, Array, Objects:
+Size depends on content and memory allocation by JVM.
+
+
+
+Input methods for each data type:
+
+byte: scanner.nextByte();
+short: scanner.nextShort();
+int: scanner.nextInt();
+long: scanner.nextLong();
+float: scanner.nextFloat();
+double: scanner.nextDouble();
+char: scanner.next().charAt(0); (Reads the first character of a string.)
+boolean: scanner.nextBoolean();
+String:
+Single word: scanner.next();
+Full line: scanner.nextLine();
+
+*****************Identifiers********************
+
+An identifier is a name used to identify a variable, method, class, or any other user-defined item. Identifiers must begin with a letter (A-Z or a-z), an underscore (_), or a dollar sign ($). The rest of the identifier can contain digits (0-9).
+
+int _age = 30;    // Valid identifier
+int $amount = 50; // Valid identifier
+int 1number = 10; // Invalid identifier (starts with a number)
+
+
+
+************Comments***************
+Single line comments(//)
+Multiline comments(/*…..*/)
+Documentation comments(/**….)
+
+
+
+HELLO WORLD
+------------------
+class FirstJavaProgram
+{
+public static void main(String args[])
+{
+System.out.println(“Hello world..”);
+}
+}
+
+OPERATOR-------------->
+ARITHMETIC OPERATOR
+
+ORDER OF PRECEDENCE
+* / %(START FROM LEFT SIDE)
++ -
+
+10+5/2%2=10
+12%10=2
+small no/larger no=0
+small no%larger no=small no
+5/2=2
+5%2=1
+5.0/2=2.5
+5/2.0=2.5
+5.0%2=1.0
+-5/2=-2
+-5.0/2=-2.5
+-5.0%2=-1.0
+5/-2=-2
+5.0/-2=-2.5
+************AREA OF CIRCLE***********
+i/p:
+5
+o/p:
+78.50
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	   Scanner ob=new Scanner(System.in);
+	   float rad=ob.nextFloat();
+		System.out.printf("%.2f",(3.14*rad*rad));
+	}
+}
+*********************NO OF DAYS**************
+i/p:num=390 
+o/p
+year:1
+month:0
+days:25
+
+i/p:1000
+o/p:
+year:2
+month:9
+days:0
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	   Scanner ob=new Scanner(System.in);
+	   int num=ob.nextInt();
+	   int year,month,days;
+	   year=num/365;
+month=(num%365)/30;
+days=(num%365)%30;
+System.out.println("year: "+year+"\n"+"month: "+month+"\n"+"day: "+days);
+	}
+}
+
+
+
+*********************PRACTICE PROBLEM***************************
+
+1.Problem Statement:
+Print the following output : Let's learn 'JAVA' together with Selvi
+Input Format:
+NA
+Output Format:
+Let's learn 'JAVA' together with Selvi
+
+public class Main{
+public static void main(String[] args) 
+{
+ System.out.println("Let's learn 'JAVA' together with Selvi");
+}
+}
+
+
+2.Problem Statement:
+Print the following output : If you want to shine like a "Sun",first burn like a "Sun".
+Input Format:
+NA
+Output Format:
+If you want to shine like a "Sun",first burn like a "Sun".
+
+public class Main{
+public static void main(String[] args) 
+{
+ System.out.println("If you want to shine like a \"Sun\",first burn like a \"Sun\".");
+}
+}
+
+
+
+
+3.Problem Statement:
+Print the following output : \n ,%%, \
+Input Format:
+NA
+Output Format:
+\n
+
+public class Main{
+public static void main(String[] args) 
+{
+ System.out.println("\\n");
+}
+}
+
+4.Problem Statement:
+Declare 2 integer variables and initialize their values as 20 and 10
+Input Format:
+NA
+Output Format:
+Print the stored the values as space separated.
+
+
+public class Main{
+public static void main(String[] args) {
+    int num1=20;
+    int num2=10;
+    System.out.println(num1+" "+num2);
+}
+}
+
+
+
+
+5.Problem Statement:
+Accept a character and print the character
+Input Format:
+Accept  a character as a input.
+Output Format:
+Print the Character
+
+import java.util.*;
+public class Main{
+public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+    char character= sc.next().charAt(0);
+    System.out.println(character);
+}
+}
+
+6.Problem Statement:
+Given 2 numbers, print the first number as a 5-digit number and print the second number in the next line with 5 width space
+Explanation: If numbers are 25 and 98,print the first number as 00025 and second number as 3 space and 98(   98).
+Input Format:
+Accept the two integer as a input
+Output Format:
+5 digit number format followed by number with 5 width space in new line.
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int firstNumber = scanner.nextInt();
+        int secondNumber = scanner.nextInt();
+        System.out.printf("%05d \n %5d", firstNumber, secondNumber);
+    }
+}
+
+
+7.Problem Statement:
+Accept a character and print its corresponding ASCII value.
+Input Format:
+Accept a character as input.
+Output Format:
+Input character:ASCII value
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        char character= sc.next().charAt(0);
+        int ASCIIvalue= character;
+        System.out.println(character+":"+ASCIIvalue);
+}
+}
+
+8.Accept an integer value and print the corresponding character associated with the integer value.
+
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int Ascii= sc.nextInt();
+           char character= (char)Ascii; 
+           System.out.println(Ascii+":"+character);
+}
+}
+
+9.Accept a floating point value and print it with 20 width space and round off to 4 decimal places.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float inputValue = scanner.nextFloat();
+        System.out.printf("%20.4f\n", inputValue);
+    }
+}
+
+
+10.Accept a floating point  value and precision value and print the floating point  value according to the precision given.
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float floatValue = scanner.nextFloat();
+        int precision = scanner.nextInt();
+                 System.out.printf("%." + precision + "f", floatValue);
+    }
+}
+
+11.Display the given floating point value to its nearest integer value
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        float inputValue = scanner.nextFloat();
+                System.out.println(Math.round(inputValue));
+    }
+}
+
+
+12.Accept a number that starts with 0x it indicates that the number is a hexadecimal value. Print the corresponding decimal value.
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+         String input = scanner.next();
+        
+            long decimalValue = Long.parseLong(input.substring(2), 16);
+                System.out.println(decimalValue);
+    }
+}
+
+or
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+         String input = scanner.next();
+        
+           
+                System.out.println(Integer.decode(input));
+    }
+}
+13.Get a value and print its corresponding hexadecimal number
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int input = scanner.nextInt();
+        
+        System.out.println(Integer.toHexString(input));
+    }
+}
+14.Get a floating point value and print the floating point value without any trailing zeros.
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
+        System.out.println(input.replaceAll("0*$", "").replaceAll("\\.$", ""));
+    }
+}
+
+
+15.Print the statement using concatenation
+
+public class ConcatenationExample {
+    public static void main(String[] args) {
+        String part1 = "Hello";
+        String part2 = "World";
+        String result = part1 + " " + part2; // Concatenation
+        System.out.println(result); // Output: Hello World
+    }
+}
