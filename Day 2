@@ -1,0 +1,168 @@
+import java.util.Scanner;
+public class cond1
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int year=kbd.nextInt();
+        if(year%400==0 || year%100!=0&&year%4==0)
+        System.out.println("leap year");
+        else
+        System.out.println("non leap year");
+	}
+}
+
+import java.util.Scanner;
+public class cond1
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    char choice=kbd.next().charAt(0);
+        switch(choice){
+            case 'A': System.out.println("Withdraw"); break;
+            case 'B': System.out.println("Deposit"); break;
+            case 'C': System.out.println("Balance Check"); break;
+            default: System.out.println("Thank you please enter A-C");
+        }
+        
+	}
+}
+
+
+
+public class cond1
+{
+	public static void main(String[] args) {
+	    // Scanner kbd=new Scanner(System.in);
+	    // char choice=kbd.next().charAt(0);
+       // for(int i=1;i<5;i++)
+    //    int i=1;
+    //    while(i<5){ 
+    //    System.out.println("Selvi");
+    //    i++;
+    //    }
+    int i=1;
+    do { 
+        System.out.println("Selvi");
+        i++;
+    } while (i<5);
+        
+        
+	}
+}
+
+
+
+***********1-N*******
+
+import java.util.Scanner;
+
+public class cond1
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i=1;i<=n;i++)
+        System.out.print(i+" ");  
+	}
+}
+
+N-1********************
+
+import java.util.Scanner;
+
+public class cond1
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int i=n;
+        while(i>=1)
+        {        System.out.print(i+" ");
+                    i--;  
+                    System.out.println("A");
+        }
+    }
+}
+
+
+A-Z*****************
+
+public class cond1
+{
+	public static void main(String[] args) {
+	    // Scanner scan = new Scanner(System.in);
+        // char n = scan.next().charAt(0);
+        for(char i='A';i<='Z';i++)
+        System.out.print(i+" ");
+    }
+}
+
+Z-A***********************
+
+import java.util.Scanner;
+public class cond1
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        char n = scan.next().charAt(0);
+        for(char i='Z';i>=n;i--)
+        System.out.print(i+" ");
+    }
+}
+
+
+******** TRY to print 
+a-z 
+z-a
+1-n even nos
+
+
+
+********************N-N********************
+import java.util.Scanner;
+public class cond1
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for( int i=1;i<=n;i++){
+        for( int j=1;j<=n;j++)
+        System.out.print("*");
+        System.out.println();
+        }
+    }
+}
+
+***********Left Traingle
+
+import java.util.Scanner;
+public class cond1
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for( int row=1;row<=n;row++){
+        for( int col=1;col<=row;col++)
+        System.out.print("*");
+        System.out.println();
+        }
+    }
+}
+
+***********Right Traingle
+
+import java.util.Scanner;
+public class cond1
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for( int row=1;row<=n;row++){
+        for( int col=1;col<=n-row;col++)
+        System.out.print(" ");
+         for( int col=1;col<=row;col++)
+        System.out.print("*");
+        System.out.println();
+        }
+    }
+}
