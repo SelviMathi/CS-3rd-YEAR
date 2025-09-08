@@ -18,8 +18,8 @@ public class Main
 
 System.out.print(Arrays.toString(arr));	}
 }
-
-Reverse the Array elements
+******************************************
+1.Reverse the Array elements
 
 import java.util.Scanner;
 import java.util.Arrays;
@@ -38,6 +38,92 @@ public class Main
 
 System.out.print(Arrays.toString(arr));	
 }}
+****************************************************************
+2.Sum of the Array elements
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	
+	Scanner kbd=new Scanner(System.in);
+	int size=kbd.nextInt();
+	int arr[]=new int[size];
+	int sum=0;
+	for(int i=0;i<size;i++){
+	arr[i]=kbd.nextInt();
+	sum+=arr[i];
+	}
+	System.out.print("Sum "+sum);
 
-Sum of the Array elements
+	}}
 
+*********************************************************
+3.Prod of the Array elements
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main
+{
+	public static void main(String[] args) {
+	
+	Scanner kbd=new Scanner(System.in);
+	int size=kbd.nextInt();
+	int arr[]=new int[size];
+	int a=1;
+	for(int i=0;i<size;i++){
+	arr[i]=kbd.nextInt();
+	a*=arr[i];
+	}
+	System.out.print("Prod "+a);
+
+	}}
+
+*********************************************************
+
+4. Write a  program to print the count of the elements in an array whose values are lesser than a key element in an unsorted array.
+
+**************************************************************
+
+
+**************************************************************
+
+5.Write a program to find minimum of the array .
+
+**************************************************************
+
+**************************************************************
+
+
+6.Write a program to search an element in the given array and print the searched elements index. If no such elements were found print -1
+
+**************************************************************
+
+**************************************************************
+
+7.You are given an array of 0s and 1s in random order. Segregate 0s on left side and 1s on right side of the array . 
+Input array   =  [0, 1, 0, 1, 0, 0, 1, 1, 1, 0] 
+Output array =  [0, 0, 0, 0, 0, 1, 1, 1, 1, 1] 
+
+**************************************************************
+
+
+**************************************************************
+
+8.Write a program  to replace the array elements with sum of other  elements.
+
+**************************************************************
+
+**************************************************************
+
+9.Write a program  to insert the value at given position in the array.
+
+**************************************************************
+
+**************************************************************
+
+10.Write a program  to delete the value at given position from the array.
+
+**************************************************************
+
+
+**************************************************************
