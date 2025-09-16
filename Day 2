@@ -1,3 +1,180 @@
+***********if Syntax*************
+if(condition)
+{
+}
+***********if-else Syntax*************
+if(condition)
+{
+}
+else
+{
+}
+***********ladder if else Syntax*************
+if(condition){
+}
+else if(condition){
+}
+else if(condition){
+}
+else{
+}
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num1=obj.nextInt();
+        if(num1>0)//if()
+        System.out.println("Positive");
+        else if(num1==0)
+        System.out.println("Neither Positive Nor Negative");
+        else
+        System.out.println("Negative");
+    }
+}
+***********Nested if else Syntax*************
+if(condition){
+if(condtion){
+}
+else{
+}
+}
+else{
+}
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num1=obj.nextInt();
+        if(num1>0)
+        {
+            if(num1%2==0)
+            System.out.println("Positive Even");
+            else
+            System.out.println("Positive Odd");
+        }
+        else
+        System.out.println("Negative");
+    }
+}
+
+
+
+******************SwitchCase Syntax******************
+switch()
+{
+case :
+{
+}
+break;
+case :
+{
+}
+break;
+default :
+{
+}
+}
+
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int choice=obj.nextInt();
+        switch(choice)
+        {
+            case 1:
+                System.out.println("Balance Enquiry");
+                break;
+            case 2:
+                System.out.println("Withdraw");
+                break;
+            case 3:
+                System.out.println("Deposit");
+                break;
+            case 4:
+                System.out.println("Pin Change");
+                break;
+            default:
+                System.out.println("Enter 1-4");
+                
+        }
+        
+    }
+}
+**********Ternary Operator Syntax****************************
+condition ? True Statement : false statement;
+Nested Ternary is also possible
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int num1=obj.nextInt();
+        int num2=obj.nextInt();
+       System.out.println((num1>num2)?(num1):(num2));
+        
+    }
+}
+*********************************************************************
+***************************while syntax*********************
+initialisation;
+while(condtn)
+{
+alteration;
+}
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		int i=0;
+		while(i<5){
+				System.out.println("Hello World");
+				i++;
+	    }
+	}
+}
+
+
+***************************do- while syntax*********************
+initialisation;
+do{
+alteration;
+}while(condtn);
+
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		int i=0;
+		do{
+				System.out.println("Hello World");
+				i++;
+	    }while(i<5);
+	}
+}
+
+
+***************************for syntax*********************
+for(initialisation;condtn;alteration)
+{
+
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+		for(int i=0;i<5;i++)
+      {
+				System.out.println("Hello World");
+				
+	    }
+	}
+}
+*******************************************************************************
 import java.util.Scanner;
 public class cond1
 {
