@@ -1,3 +1,12 @@
+Function types:
+1.Predefined
+main()
+println()
+pow()
+sqrt()
+2.User defined
+4 types
+
 METHOD WITH PARAMETER WITHOUT RETURN TYPE
 import java.util.Scanner;
 public class method{
@@ -65,6 +74,43 @@ static int add(){
 
 
 
+1. Addition of two number using function
+
+
+public class Main {
+   int add(int x,int y)
+    {
+       return (x+y);
+             
+    }
+        public static void main(String[] args) {
+            Main ob=new Main();
+           
+           System.out.println(ob.add(20,49));
+           System.out.println(ob.add(20,40));
+    }
+}
+
+
+2. Fact of number using function
+
+import java.util.Scanner;
+public class Main {
+   void factorial(int n)
+   {
+       int fact=1;
+        for(int i=1;i<=n;i++)
+        fact=fact*i;
+        System.out.println(fact);
+   }
+        public static void main(String[] args) {
+           Scanner oj=new Scanner (System.in);
+           int limit=oj.nextInt();
+           Main ob=new Main();
+           ob.factorial(limit);
+           
+    }
+}
 
 
 
