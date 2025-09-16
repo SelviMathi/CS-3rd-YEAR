@@ -126,4 +126,50 @@ Output array =  [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
 **************************************************************
 
 
+
+
+
+
+
+
+Rotate using Rev
+**************************************************************
+
+import java.util.*;
+public class me{
+public static void main(String args[]){
+Scanner kb=new Scanner(System.in);
+int size=kb.nextInt();//5
+int arr[]=new int[size];
+for(int i=0;i<size;i++)
+arr[i]=kb.nextInt();//1 2 3 4 5
+System.out.print(Arrays.toString(arr));
+int r=kb.nextInt();
+
+System.out.print("\n Rotated Array"
++ Arrays.toString(rot(arr,r)));
+}
+static void rev(int a[],int st,int en){
+int s=a.length;
+int i=st,j=en;
+while(i<j){
+int temp=a[i];
+a[i]=a[j];
+a[j]=temp;
+i++;
+j--;
+}}
+static int[] rot(int ar[],int r){
+int s1=ar.length;
+rev(ar,0,s1-1);
+rev(ar,0,r);
+rev(ar,r,s1-1);
+return ar;
+}
+
+}
+
+
+
+
 **************************************************************
