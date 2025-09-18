@@ -111,6 +111,38 @@ public class Main {
            
     }
 }
+***************************
+
+USING RECURSIVE FUNCTION for Factorial
+
+
+java.util.*;
+class Ex{
+public static void main(String args[]){
+Scanner kbd=new Scanner(System.in);
+int num1=kbd.nextInt();
+System.out.print(fact(num1));
+}
+static int fact(int n){
+if(n==0 ||n==1) 
+return 1;
+return (n*fact(n-1));
+}}
+
+*******************FIBONACCI Using Recursive Function
+
+import java.util.*;
+class Ex{
+public static void main(String args[]){
+Scanner kbd=new Scanner(System.in);
+int num1=kbd.nextInt();
+System.out.print(fibo(num1));
+}
+static int fibo(int n){
+if(n==0 ||n==1) 
+return n;
+return fibo(n-1)+fibo(n-2);
+}}
 
 
 3.Reverse of a number
@@ -158,7 +190,6 @@ int mul(int m,int n){
 return m*n;
 }
 }
-
 
 
 
