@@ -315,3 +315,51 @@ return ar;
 
 
 **************************************************************
+
+EVEN ODD COUNT
+
+import java.util.*;
+class Ex{
+public static void main(String args[]){
+Scanner kbd=new Scanner(System.in);
+int size=kbd.nextInt();
+int arr[]=new int[size];
+for(int i=0;i<size;i++)
+arr[i]=kbd.nextInt();
+evenOddCount(arr);}
+static void evenOddCount(int[] a){
+int len=a.length;
+int EvenC=0,OddC=0;
+for(int i=0;i<len;i++){
+if(a[i]%2==0)
+EvenC++;
+else
+OddC++;
+}
+System.out.println("Even "+EvenC+"\nOdd "+OddC);
+}
+}
+*******************************************************
+Swap Adj pair in Array
+
+import java.util.*;
+class Ex{
+public static void main(String args[]){
+Scanner kbd=new Scanner(System.in);
+int size=kbd.nextInt();
+int arr[]=new int[size];
+for(int i=0;i<size;i++)
+arr[i]=kbd.nextInt();
+int[] res=swapAdjPair(arr);
+System.out.print(Arrays.toString(res));
+}
+static int[] swapAdjPair(int[] a){
+for(int i=0;i<a.length-1;i=i+2){
+int temp=a[i];
+a[i]=a[i+1];
+a[i+1]=temp;
+}
+return a;
+}
+}
+
