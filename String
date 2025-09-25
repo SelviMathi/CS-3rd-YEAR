@@ -131,7 +131,10 @@ public class Main
         System.out.println("Joined String: " + joined);
 
 ******************substring
+System.out.println(name.substring(2));
  System.out.println("Substring (2 to 7): " + str.substring(2, 7));
+
+
 ***************Value conversion
 int number = 100;
         String numberStr = String.valueOf(number);
