@@ -58,7 +58,7 @@ public class Main
 }
 
 
-*******************Change case******
+*******************case conversion******
 import java.util.Scanner;
 public class Main
 {
@@ -72,3 +72,150 @@ public class Main
 		
 	}
 }
+
+
+************************Comparison******
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    String name=new String(kbd.next());
+	String name1=kbd.next();
+	System.out.println(name.equals(name1));
+	System.out.println(name.equalsIgnoreCase(name1));
+	System.out.println(name.compareTo(name1));
+
+	}
+}
+************************Searching************
+
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    String str="Hello Java World";
+	
+	System.out.println("Index of 'Java': " + str.indexOf("Java"));
+        System.out.println("Last Index of 'l': " + str.lastIndexOf('l'));
+	System.out.println("Character at index 2: " + str.charAt(2));
+	}
+}
+
+*********************Trimming Repalcing
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    String name="Hello Java World";
+	System.out.println("Trim: '" + str.trim() + "'");
+        System.out.println("Replace 'Java' with 'Python': " + str.replace("Java", "Python"));
+        System.out.println("Replace all spaces: " + str.replaceAll(" ", "_"));
+        System.out.println("Replace first space: " + str.replaceFirst(" ", "-"));
+
+	}
+}
+
+************Splitting Joining
+
+ String[] words = str.trim().split(" ");
+        System.out.println("Split words:");
+        for (String word : words) {
+            System.out.println(word);
+        }
+
+        String joined = String.join("-", "One", "Two", "Three");
+        System.out.println("Joined String: " + joined);
+
+******************substring
+ System.out.println("Substring (2 to 7): " + str.substring(2, 7));
+***************Value conversion
+int number = 100;
+        String numberStr = String.valueOf(number);
+        System.out.println("Integer to String: " + numberStr);
+        char[] chars = str.toCharArray();
+        System.out.println("To Char Array:");
+        for (char c : chars) {
+            System.out.print(c + " ");
+        }
+
+
+
+
+Vowel count**************************
+import java.util.Scanner;
+public class S{
+public static void main(String args[]){
+    Scanner ob=new Scanner(System.in);
+    String n=ob.next();
+    int vowel=0;
+    for(int i=0;i<n.length();i++){
+        if(n.charAt(i)=='a'||n.charAt(i)=='A'||
+        n.charAt(i)=='e'||n.charAt(i)=='E'||
+        n.charAt(i)=='i'||n.charAt(i)=='I'||
+        n.charAt(i)=='o'||n.charAt(i)=='O'||
+        n.charAt(i)=='u'||n.charAt(i)=='U')
+        vowel++;
+}
+    System.out.println(vowel);
+}
+}
+
+
+Count the words that ended with given string******************
+
+import java.util.Scanner;
+public class countendwithchar {
+    public static void main(String[] args) {
+        Scanner ob=new Scanner(System.in);
+        int size=ob.nextInt();
+        ob.nextLine();
+        String name[]=new String[size];
+        for(int i=0;i<size;i++){
+            name[i]=ob.nextLine();
+        }
+        String s=ob.nextLine();
+        int count=0;
+        for(String n:name){
+            if(n.endsWith(s)) 
+                count++;
+        }  
+        System.out.println(count);
+    
+    }
+}
+
+Count the sentence in paragraph******************
+import java.util.Scanner;
+
+public class sentencecount {
+    public static void main(String[] args) {
+        Scanner ob= new Scanner(System.in);
+        String n=ob.nextLine();
+        int count=0;
+    for(int i=0;i<n.length();i++){
+        if(n.charAt(i)=='.'||n.charAt(i)=='!'
+            ||n.charAt(i)=='?')
+                count++;
+        }
+        System.out.println(count);
+    }
+    
+}
+Word count***************************
+import java.util.Scanner;
+public class wordcount {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name=sc.nextLine();
+        int count = 0;
+        for(int i=0;i<name.length();i++){
+            if(name.charAt(i)==' ')
+                count++;
+            }
+            System.out.println(count+1);
+        }
+    }
