@@ -104,13 +104,13 @@ public class Main
 	}
 }
 
-*********************Trimming Repalcing
+*********************Trimming Replacing
 import java.util.Scanner;
 public class Main
 {
     public static void main(String[] args) {
     Scanner kbd=new Scanner(System.in);
-    String name="Hello Java World";
+    String str="Hello Java World";
 	System.out.println("Trim: '" + str.trim() + "'");
         System.out.println("Replace 'Java' with 'Python': " + str.replace("Java", "Python"));
         System.out.println("Replace all spaces: " + str.replaceAll(" ", "_"));
