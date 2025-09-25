@@ -57,7 +57,6 @@ public class Main
 	}
 }
 
-
 *******************case conversion******
 import java.util.Scanner;
 public class Main
@@ -65,14 +64,10 @@ public class Main
 	public static void main(String[] args) {
     Scanner kbd=new Scanner(System.in);
     String name=new String(kbd.next());
-	
-	System.out.println(name.toLowerCase());
-	
-	System.out.println(name.toUpperCase());
-		
-	}
+		System.out.println(name.toLowerCase());
+		System.out.println(name.toUpperCase());
+		}
 }
-
 
 ************************Comparison******
 import java.util.Scanner;
@@ -89,8 +84,6 @@ public class Main
 	}
 }
 ************************Searching************
-
-
 import java.util.Scanner;
 public class Main
 {
@@ -115,7 +108,6 @@ public class Main
         System.out.println("Replace 'Java' with 'Python': " + str.replace("Java", "Python"));
         System.out.println("Replace all spaces: " + str.replaceAll(" ", "_"));
         System.out.println("Replace first space: " + str.replaceFirst(" ", "-"));
-
 	}
 }
 
@@ -166,7 +158,52 @@ public static void main(String args[]){
     System.out.println(vowel);
 }
 }
+OR
+import java.util.Scanner;
+public class S{
+public static void main(String args[]){
+    Scanner ob=new Scanner(System.in);
+    String n=ob.next();
+    int vowel=0;
+	String n1="AEIOUaeiou";
+    for(int i=0;i<n.length();i++){
+        if(n1.contains(n.charAt(i)+""))
+		vowel++;
+}
+    System.out.println(vowel);
+}
+}
+Word count***************************
+import java.util.Scanner;
+public class wordcount {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String name=sc.nextLine();
+        int count = 0;
+        for(int i=0;i<name.length();i++){
+            if(name.charAt(i)==' ')
+                count++;
+            }
+            System.out.println(count+1);
+        }
+    }
+Count the sentence in paragraph******************
+import java.util.Scanner;
 
+public class sentencecount {
+    public static void main(String[] args) {
+        Scanner ob= new Scanner(System.in);
+        String n=ob.nextLine();
+        int count=0;
+    for(int i=0;i<n.length();i++){
+        if(n.charAt(i)=='.'||n.charAt(i)=='!'
+            ||n.charAt(i)=='?')
+                count++;
+        }
+        System.out.println(count);
+    }
+    
+}
 
 Count the words that ended with given string******************
 
@@ -191,38 +228,6 @@ public class countendwithchar {
     }
 }
 
-Count the sentence in paragraph******************
-import java.util.Scanner;
-
-public class sentencecount {
-    public static void main(String[] args) {
-        Scanner ob= new Scanner(System.in);
-        String n=ob.nextLine();
-        int count=0;
-    for(int i=0;i<n.length();i++){
-        if(n.charAt(i)=='.'||n.charAt(i)=='!'
-            ||n.charAt(i)=='?')
-                count++;
-        }
-        System.out.println(count);
-    }
-    
-}
-Word count***************************
-import java.util.Scanner;
-public class wordcount {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String name=sc.nextLine();
-        int count = 0;
-        for(int i=0;i<name.length();i++){
-            if(name.charAt(i)==' ')
-                count++;
-            }
-            System.out.println(count+1);
-        }
-    }
-************************************************************
 **********String Buffer Methods
 
 public class StringBufferMethodsDemo {
