@@ -1,0 +1,74 @@
+String name;
+name="VSB";
+SOP(name);
+
+String name="VSB";
+SOP(name);
+
+
+String name=new String("VSB");
+
+String name=sc.next();
+String name=sc.nextLine();
+
+
+char name[]={'V','S','B'};
+String str=new String(nmae);
+
+
+*************Length**************
+
+public class Main
+{
+	public static void main(String[] args) {
+	String str="Placement";
+	char[] name={'A','B'};
+		System.out.println(str.length());
+		System.out.print(name.length);
+	}
+}
+
+
+**********String is immutable*********
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    String str=kbd.next();
+	String str1=kbd.next();
+	System.out.println(str.hashCode());
+	System.out.println(str1.hashCode());
+	}
+}
+
+*******************StringBuilder is mutable*****************
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    StringBuilder name=new StringBuilder(kbd.next());
+	StringBuilder name1=new StringBuilder(kbd.next());
+	System.out.println(name.hashCode());
+	System.out.println(name1.hashCode());
+		
+	}
+}
+
+
+*******************Change case******
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner kbd=new Scanner(System.in);
+    String name=new String(kbd.next());
+	
+	System.out.println(name.toLowerCase());
+	
+	System.out.println(name.toUpperCase());
+		
+	}
+}
