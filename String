@@ -77,6 +77,7 @@ public class Main
     Scanner kbd=new Scanner(System.in);
     String name=new String(kbd.next());
 	String name1=kbd.next();
+	System.out.println(name==name1);
 	System.out.println(name.equals(name1));
 	System.out.println(name.equalsIgnoreCase(name1));
 	System.out.println(name.compareTo(name1));
@@ -92,6 +93,8 @@ public class Main
     String str="Hello Java World";
 	
 	System.out.println("Index of 'Java': " + str.indexOf("Java"));
+	System.out.println("Index of 'Java': " + str.indexOf('J'));
+	System.out.println("Index of 'Java': " + str.indexOf('l',5));
         System.out.println("Last Index of 'l': " + str.lastIndexOf('l'));
 	System.out.println("Character at index 2: " + str.charAt(2));
 	}
