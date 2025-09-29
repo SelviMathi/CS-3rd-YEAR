@@ -1,3 +1,6 @@
+STRING CHEATSHEET
+https://docs.google.com/spreadsheets/d/1KgUhtJOY3o2PR4E5v06WnGXzyJ9dK3-AatMLhHAukII/edit?usp=sharing
+
 String name;
 name="VSB";
 SOP(name);
@@ -211,7 +214,7 @@ public class sentencecount {
 Count the words that ended with given string******************
 
 import java.util.Scanner;
-public class countendwithchar {
+public class Main {
     public static void main(String[] args) {
         Scanner ob=new Scanner(System.in);
         int size=ob.nextInt();
@@ -233,7 +236,7 @@ public class countendwithchar {
 
 **********String Buffer Methods
 
-public class StringBufferMethodsDemo {
+public class Main{
     public static void main(String[] args) {
         // Constructor
         StringBuffer sb = new StringBuffer("Java");
@@ -288,7 +291,7 @@ public class StringBufferMethodsDemo {
 }
 
 **********String Builder Methods
-public class StringBuilderMethodsDemo {
+public class Main {
     public static void main(String[] args) {
         // Constructor
         StringBuilder sb = new StringBuilder("Hello");
@@ -349,7 +352,7 @@ public class StringBuilderMethodsDemo {
 ***************Character Class Methods
 import java.util.Scanner;
 
-public class CharacterMethodsDemo {
+public class Main{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
