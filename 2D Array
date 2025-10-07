@@ -1,0 +1,58 @@
+import java.util.*;
+public class Main{
+public static void main(String args[]){
+Scanner kbd=new Scanner(System.in);
+int row=kbd.nextInt();
+int col=kbd.nextInt();
+int a[][]=new int[row][col];
+for(int i=0;i<row;i++){
+for(int j=0;j<col;j++)
+a[i][j]=kbd.nextInt();
+}
+display(a);
+System.out.println("Total sum: "+totalSum(a));
+System.out.println("Row Sum: ");
+rowSum(a);
+}
+static void display(int a[][]){
+for(int i=0;i<row;i++){
+for(int j=0;j<col;j++)
+System.out.print(a[i][j]+" ");
+System.out.println();
+}
+}
+
+static int totalSum(int z[][]){
+int row=z.length;
+int col=z[0].length;
+int sum=0;
+for(int i=0;i<row;i++){
+for(int j=0;j<col;j++)
+sum+=z[i][j];
+}
+return sum;
+}
+static void rowSum(int z[][]){
+int row=z.length;
+int col=z[0].length;
+for(int i=0;i<row;i++){
+int sum=0;
+for(int j=0;j<col;j++)
+sum+=z[i][j];
+System.out.println(sum);
+}
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
